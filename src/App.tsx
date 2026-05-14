@@ -15,7 +15,7 @@ function App() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-slate-800">BuyaBOP<span className="text-emerald-600">.com</span></h1>
+            <h1 className="text-lg md:text-2xl font-bold text-slate-800 truncate">BuyaBOP<span className="text-emerald-600">.com</span></h1>
             <p className="text-xs text-slate-500">Business Owners Policy Insurance</p>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
