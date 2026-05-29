@@ -4,7 +4,7 @@ function App() {
       {/* Top Bar */}
       <div className="bg-emerald-700 text-white text-sm py-2 px-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span>🏢 Business Insurance Made Simple</span>
+          <span>⭐ Travelers BOP — Rated #1 for Small Business Claims | 10% Multi-Line Discount</span>
           <div className="flex gap-6">
             <a href="tel:800-616-1418" className="hover:text-emerald-200">📞 800-616-1418</a>
           </div>
@@ -38,8 +38,8 @@ function App() {
               Protect Your Small Business With One Simple Policy
             </h2>
             <p className="text-slate-600 text-lg mb-8">
-              A Business Owners Policy (BOP) bundles general liability and commercial property insurance 
-              into one affordable package. Perfect for small to mid-sized businesses.
+              Get a <strong>Travelers BOP quote in just 8 minutes</strong>. Bundle general liability and commercial property 
+              into one affordable package. <strong>Save 10% on multi-line discounts.</strong>
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg">
@@ -49,11 +49,12 @@ function App() {
                 📞 800-616-1418
               </a>
             </div>
-            <p className="text-sm text-slate-500 mt-4">✓ Quotes in minutes  ✓ Coverage same-day  ✓ No obligation</p>
+            <p className="text-sm text-slate-500 mt-4">✓ Quotes in 8 minutes  ✓ Travelers A++ Rated  ✓ 80% issue without referral  ✓ No obligation</p>
           </div>
           <div className="hidden md:block">
-            <div className="bg-white rounded-2xl shadow-2xl p-8">
-              <h3 className="text-xl font-bold text-slate-800 mb-6">What's Included in a BOP?</h3>
+            <div className="bg-white rounded-2xl shadow-2xl p-8 border-2 border-emerald-600">
+              <div className="bg-emerald-600 text-white px-3 py-1 rounded inline-block text-sm font-bold mb-4">Travelers BOP</div>
+              <h3 className="text-xl font-bold text-slate-800 mb-6">What's Included?</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="text-emerald-600 text-xl">✓</span>
@@ -154,30 +155,30 @@ function App() {
       {/* Industries */}
       <section id="industries" className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-slate-800 mb-4">BOPs Are Perfect For:</h3>
+          <h3 className="text-3xl font-bold text-center text-slate-800 mb-4">Travelers BOP Works For These Industries:</h3>
           <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-            Ideal for businesses with under $5M in revenue, fewer than 100 employees, and lower-risk operations.
+            Preferred appetites: 250+ Workers Comp roadblocks removed, 80% of quotes issue without underwriter referral.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: '🏪', name: 'Retail Stores' },
-              { icon: '🍽️', name: 'Restaurants' },
-              { icon: '💈', name: 'Salons & Spas' },
-              { icon: '🏥', name: 'Medical Offices' },
-              { icon: '📊', name: 'Consultants' },
-              { icon: '🏢', name: 'Office-Based' },
-              { icon: '🔧', name: 'Service Businesses' },
-              { icon: '📸', name: 'Photography' },
-              { icon: '🖥️', name: 'IT Services' },
-              { icon: '🏋️', name: 'Fitness Studios' },
-              { icon: '🧹', name: 'Cleaning Services' },
-              { icon: '📦', name: 'Wholesale' },
+              { icon: '🔨', name: 'Contractors', link: '?vertical=contractors' },
+              { icon: '💈', name: 'Salons & Spas', link: '?vertical=salon' },
+              { icon: '🏥', name: 'Healthcare', link: '?vertical=healthcare' },
+              { icon: '🏪', name: 'Retail', link: '?vertical=retail' },
+              { icon: '🍽️', name: 'Restaurants', link: '?vertical=restaurant' },
+              { icon: '🏢', name: 'Office-Based', link: '?vertical=office' },
+              { icon: '🚗', name: 'Auto Repair', link: '?vertical=garage' },
+              { icon: '🏦', name: 'Financial Services', link: '?vertical=financial' },
+              { icon: '🏗️', name: 'Real Estate', link: '?vertical=realestate' },
+              { icon: '🧹', name: 'Cleaning Services', link: '?vertical=janitorial' },
+              { icon: '📦', name: 'Manufacturing', link: '?vertical=manufacturer' },
+              { icon: '👔', name: 'Other Industries', link: '?vertical=other' },
             ].map((item) => (
-              <div key={item.name} className="bg-slate-50 p-4 rounded-lg text-center hover:bg-emerald-50 hover:shadow-md transition">
+              <a key={item.name} href={item.link} className="bg-slate-50 p-4 rounded-lg text-center hover:bg-emerald-600 hover:text-white hover:shadow-md transition cursor-pointer">
                 <div className="text-3xl mb-2">{item.icon}</div>
-                <p className="font-semibold text-slate-700">{item.name}</p>
-              </div>
+                <p className="font-semibold text-slate-700 hover:text-white">{item.name}</p>
+              </a>
             ))}
           </div>
         </div>
@@ -200,9 +201,9 @@ function App() {
               <p className="text-sm text-slate-600 mt-2">Top-rated insurers you can trust</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl mb-4">📋</div>
-              <h4 className="font-bold text-slate-800">300+ Classes</h4>
-              <p className="text-sm text-slate-600 mt-2">Coverage for nearly any business type</p>
+              <div className="text-5xl mb-4">🏆</div>
+              <h4 className="font-bold text-slate-800">Travelers A++</h4>
+              <p className="text-sm text-slate-600 mt-2">#1 Ranked for Claims Responsiveness</p>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-4">💬</div>
@@ -211,10 +212,9 @@ function App() {
             </div>
           </div>
 
-          <div className="mt-8 bg-white p-6 rounded-xl shadow-md max-w-2xl mx-auto">
-            <p className="text-center text-slate-600">
-              <span className="font-bold text-slate-800">Flexible payment options</span> • Competitive pricing • 
-              Broad appetite for risk • Personal lines customers get BOP discounts
+          <div className="mt-8 bg-white p-6 rounded-xl shadow-md max-w-2xl mx-auto border-l-4 border-emerald-600">
+            <p className="text-center text-slate-600 font-semibold">
+              ✓ 8-Minute Quotes  •  ✓ 10% Multi-Line Discount  •  ✓ 2-4 Hour Underwriter Turnaround  •  ✓ 59-93% Issue Without Referral
             </p>
           </div>
         </div>
@@ -223,16 +223,19 @@ function App() {
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">Ready to Protect Your Business?</h3>
-          <p className="text-xl text-emerald-100 mb-8">
-            Get your free BOP quote in minutes. No obligation.
+          <h3 className="text-3xl font-bold mb-4">Get Your Travelers BOP Quote in 8 Minutes</h3>
+          <p className="text-xl text-emerald-100 mb-2">
+            Save 10% with multi-line discounts. No obligation.
+          </p>
+          <p className="text-lg text-emerald-100 mb-8">
+            <strong>Travelers #1 Rated for Small Business Claims Responsiveness</strong>
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer" className="bg-white text-emerald-700 font-bold text-xl py-4 px-8 rounded-lg shadow-lg hover:bg-slate-100 transition">
-              Get Your Free Quote →
+              Get Free Quote (Canopy) →
             </a>
             <a href="tel:800-616-1418" className="bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xl py-4 px-8 rounded-lg shadow-lg transition">
-              📞 800-616-1418
+              📞 Call: 800-616-1418
             </a>
           </div>
         </div>
