@@ -4,7 +4,7 @@ function App() {
       {/* Top Bar */}
       <div className="bg-emerald-700 text-white text-sm py-2 px-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span>⭐ Travelers BOP — Rated #1 for Small Business Claims | 10% Multi-Line Discount</span>
+          <span>📉 Commercial rates down 5.5% in 2026 — Best time in years to lock in BOP pricing | Travelers #1 for Claims</span>
           <div className="flex gap-6">
             <a href="tel:800-616-1418" className="hover:text-emerald-200">📞 800-616-1418</a>
           </div>
