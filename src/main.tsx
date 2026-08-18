@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App'
 import './index.css'
@@ -11,12 +11,24 @@ import './index.css'
  * most of the ~38 KB the live bundle carries over the previous one, for a site
  * with exactly one page.
  */
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!
+
+const app = (
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
+
+/**
+ * The prerendered page arrives with markup already in #root, so hydrate it
+ * rather than throwing that HTML away and re-rendering from scratch.
+ */
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app)
+} else {
+  createRoot(container).render(app)
+}
