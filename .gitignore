@@ -3,3 +3,6 @@ dist/
 *.local
 .DS_Store
 *.log
+
+# Intermediate SSR bundle — consumed by scripts/prerender.mjs, never deployed.
+dist-ssr/
